@@ -1,0 +1,165 @@
+*{
+  margin:0;
+  padding:0;
+}
+/* これは、ブラウザでの見え方の差異を無くすため、余白を０にする処理です。 */
+
+
+body{
+   display: flex;
+  justify-content: center;
+}
+
+#loading{
+  position: absolute;
+  width: 1300px;
+  height: 960px;
+  background-color: aliceblue;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items:center; 
+}
+
+#loading.active{
+  transition: 1s;
+  opacity: 0;
+}
+
+#loadingText{
+  font-size: 40px;
+  animation: blinking 1s infinite;
+}
+
+@keyframes blinking{
+0%{opacity: 1;}
+50%{opacity: 0;}
+100%{opacity: 1;}
+}
+
+#preImage{
+  position: absolute;
+  scale: 0.1;
+  opacity: 0;
+}
+
+#main1{
+  position: absolute;
+  z-index: 10;
+}
+#main2{
+  position: absolute;
+}
+#mainMes{
+  position: absolute;
+}
+
+#sala{
+  margin-top: 420px;
+  margin-left: 40px;
+  position: absolute;
+  width: 300px;
+  z-index: 11;
+
+}
+
+#bigContainer{
+  width: 1300px;
+  height: 960px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  overflow:hidden;
+}
+
+.smallContainer{
+  color: aliceblue;
+  margin-left: 90px;
+  margin-top: 70px;
+  transform-origin: left;
+  scale:3;
+  display: flex;
+  z-index: 11;
+}
+
+#bgmBar{
+  cursor: grab;
+  margin-top: -3px;
+  width:250px;
+}
+
+#seBar{
+  cursor: grab;
+  margin-top: -3px;
+  width:250px;
+}
+
+
+
+
+.speed{
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.speed:hover{
+  background-color: gray;
+}
+
+#speedNormal.active{
+ background-color: green
+}
+#speedFast.active{
+  background-color: green;
+ }
+ #speedFastest.active{
+  background-color: green;
+ }
+
+.difficulty{
+  cursor: pointer;
+  margin-left: 30px;
+}
+.difficulty:hover{
+  background-color: gray;
+}
+#difficultyEasy.active{
+  background-color: green;
+ }
+#difficultyNormal.active{
+  background-color: green;
+ }
+
+#return{
+  width: 100px;
+  cursor: pointer;
+  position: relative;
+  z-index: 11;
+  color: aliceblue;
+  font-size: 50px;
+  left: 1100px;
+  top:200px;
+}
+
+#return:hover{
+  background-color: gray;
+}
+
+#messageBox{
+  top:692px;
+  left: 58px;
+  font-size: 45px;
+  font-weight: 500;
+  color: aliceblue;
+  z-index: 5;
+  position: absolute;
+  letter-spacing: 0.1em;
+  text-shadow:2px 2px 0 rgb(0, 0, 0), -2px -2px 0 rgb(0, 0, 0),
+              -2px 2px 0 rgb(0, 0, 0), 2px -2px 0 rgb(0, 0, 0),
+              0px 2px 0 rgb(0, 0, 0),  0 -2px 0 rgb(0, 0, 0),
+              -2px 0 0 rgb(0, 0, 0), 2px 0 0 rgb(0, 0, 0);
+  /* -webkit-text-stroke: 2px rgb(0, 0, 0); */
+  line-height: 55px;
+  opacity: 1;
+  z-index: 10;
+}

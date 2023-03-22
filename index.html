@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>音量バー</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <audio id="AM" src="audio/2_23_AM.mp3"></audio>
+    <audio id="power" src="audio/power14.wav"></audio>
+    <audio id="cursor" src="audio/cursor32.wav"></audio>
+    <audio id="wah" src="audio/wah.mp3"></audio>
+
+     <div id="loading">
+       <div id="loadingText">読み込み中…</div>
+       <img src="img/glayBack.png" id="preImage">
+     </div>
+      <img id="main1" src="img/waku.png">
+      <img id="main2" src="img/glayBack.png">
+      <img id="mainMes" src="img/waku2.png">
+      
+      
+      <div id="bigContainer">
+        <div id="messageBox">
+          <section>メッセージ速度を確認できます。</section>
+        </div>
+        
+        <img id="sala" src="img/salaCut.png">       
+        <div class="smallContainer">
+          <div>BGM</div>
+          <div>　　</div>
+          <input type="range" id="bgmBar"/>
+          <div>　</div>
+          <div id="bgmNum">50</div>
+        </div>
+        
+        <div class="smallContainer">
+          <div>SE</div>
+          <div>　　　</div>
+          <input type="range" id="seBar"/>
+          <div>　</div>
+          <div id="seNum">50</div>
+        </div>
+        
+        <div class="smallContainer">
+          <div>メッセージ速度</div>
+          <div>　　　</div>
+          <div id="speedNormal" class="speed">普通</div>
+          <div id="speedFast" class="speed">速い</div>
+          <div id="speedFastest" class="speed">最速</div>
+        </div>
+        <div class="smallContainer">
+          <div>難易度</div>
+          <div>　　　　　　　</div>
+          <div id="difficultyEasy" class="difficulty">イージー</div>
+          <div id="difficultyNormal" class="difficulty">ノーマル</div>
+        </div>
+        
+        <div id="return">戻る</div>
+        
+      </div>
+   
+   
+    
+
+  <script src="js/main.js"></script>
+  
+  </body>
+</html>
